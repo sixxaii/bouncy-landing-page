@@ -1,0 +1,181 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'BigJohn';
+  src: url('../fonts/BigJohn.otf') format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue-Light.ttf') format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue-Roman.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/HelveticaNeue-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* general settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  width: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+input,
+textarea,
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+}
+.vertical-align {
+  align-items: center;
+}
+.upper {
+  text-transform: uppercase;
+}
+.heading {
+  margin: 0 auto;
+  text-align: center;
+}
+.heading .title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  color: #333b46;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.heading .description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #81868e;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+/* header */
+.header {
+  position: relative;
+  background: url('../img/header-bg.png') no-repeat center;
+  height: 100vh;
+  z-index: 1;
+  padding: 40px 0;
+}
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  z-index: -1;
+}
+.header-logo a {
+  font-family: 'BigJohn';
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav__item {
+  padding: 8px 0px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  flex-grow: 1;
+  text-align: center;
+  transition: all 0.3s;
+}
+.header-nav__item a {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+.header-nav__item:hover {
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.header .heading {
+  margin-top: 170px;
+}
+.header .heading .title,
+.header .heading .description {
+  color: #fff;
+}
+.header .heading .title {
+  font-size: 40px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+.header .heading .description {
+  font-size: 17px;
+}
+.header .scroll-arrow {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  margin-left: -23px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #19bd9a;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+.header .scroll-arrow i {
+  margin-top: 10px;
+}
